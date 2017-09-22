@@ -35,7 +35,7 @@
             <property name="visibility" value="true"/>
 
             <media id="locWaterReservoir" type="application/gml+xml" scr="media/waterReservoir.gml"/>
-            <media id="mdText1" type="text/plain" scr="media/text1.txt"/>
+            <media id="mdText1" type="text/plain" scr="media/text01.txt"/>
 
             <link xconnector="space#onEnteringStart">
                 <bind role="onEntering" component="locWaterReservoir"/>
@@ -51,7 +51,7 @@
             <property name="visibility" value="true"/>
 
             <media id="locManholeCover" type="application/gml+xml" scr="media/manholeCover.gml"/>
-            <media id="mdText2" type="text/plain" scr="media/text2.txt"/>
+            <media id="mdText2" type="text/plain" scr="media/text02.txt"/>
 
             <link xconnector="space#onEnteringStart">
                 <bind role="onEntering" component="locManholeCover"/>
@@ -67,7 +67,7 @@
             <property name="visibility" value="true"/>
             
             <media id="locPalaceFountain" type="application/gml+xml" scr="media/palaceFountain.gml"/>
-            <media id="mdText3" type="text/plain" scr="media/text3.txt"/>
+            <media id="mdText3" type="text/plain" scr="media/text03.txt"/>
 
             <link xconnector="space#onEnteringStart">
                 <bind role="onEntering" component="locPalaceFountain"/>
@@ -83,7 +83,7 @@
             <property name="visibility" value="true"/>
 
             <media id="locWaterCollection" type="application/gml+xml" scr="media/waterCollection.gml"/>
-            <media id="mdText4" type="text/plain" scr="media/text4.txt"/>
+            <media id="mdText4" type="text/plain" scr="media/text04.txt"/>
 
             <link xconnector="space#onEnteringStart">
                 <bind role="onEntering" component="locWaterCollection"/>
@@ -99,7 +99,7 @@
             <property name="visibility" value="true"/>
 
             <media id="locParnassus" type="application/gml+xml" scr="media/parnassus.gml"/>
-            <media id="mdText5" type="text/plain" scr="media/text5.txt"/>
+            <media id="mdText5" type="text/plain" scr="media/text05.txt"/>
 
             <link xconnector="space#onEnteringStart">
                 <bind role="onEntering" component="locParnassus"/>
@@ -115,7 +115,7 @@
             <property name="visibility" value="true"/>
 
             <media id="locPajeuPark" type="application/gml+xml" scr="media/pajeuPark.gml"/>
-            <media id="mdText6" type="text/plain" scr="media/text6.txt"/>
+            <media id="mdText6" type="text/plain" scr="media/text06.txt"/>
 
             <link xconnector="space#onEnteringStart">
                 <bind role="onEntering" component="locPajeuPark"/>
@@ -131,7 +131,7 @@
             <property name="visibility" value="true"/>
 
             <media id="locFetidExhalations" type="application/gml+xml" scr="media/fetidExhalations.gml"/>
-            <media id="mdText7" type="text/plain" scr="media/text7.txt"/>
+            <media id="mdText7" type="text/plain" scr="media/text07.txt"/>
 
             <link xconnector="space#onEnteringStart">
                 <bind role="onEntering" component="locFetidExhalations"/>
@@ -147,7 +147,7 @@
             <property name="visibility" value="true"/>
 
             <media id="locRuinDam" type="application/gml+xml" scr="media/ruinDam.gml"/>
-            <media id="mdText8" type="text/plain" scr="media/text8.txt"/>
+            <media id="mdText8" type="text/plain" scr="media/text08.txt"/>
 
             <link xconnector="space#onEnteringStart">
                 <bind role="onEntering" component="locRuinDam"/>
@@ -163,7 +163,7 @@
             <property name="visibility" value="true"/>
 
             <media id="locSculpturePark" type="application/gml+xml" scr="media/sculpturePark.gml"/>
-            <media id="mdText9" type="text/plain" scr="media/text9.txt"/>
+            <media id="mdText9" type="text/plain" scr="media/text09.txt"/>
 
             <link xconnector="space#onEnteringStart">
                 <bind role="onEntering" component="locSculpturePark"/>

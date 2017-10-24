@@ -18,6 +18,8 @@
         <property name="mandatory" value="true"/>
         <property name="occurrence" value="unbounded"/>
         <property name="visibility" value="true"/>
+
+        <media id="locMetropolitanCathedral" type="application/gml+xml" src="media/metropolitanCathedral.gml"/>
     	</context>
 
       <!-- mission in the pequeno grande church -->
@@ -26,6 +28,8 @@
         <property name="mandatory" value="true"/>
         <property name="occurrence" value="unbounded"/>
         <property name="visibility" value="true"/>
+
+        <media id="locPeqGrandeChurch" type="application/gml+xml" src="media/peqGrandeChurch.gml"/>
       </context>
 
       <!-- mission in the patrocinio church -->
@@ -34,6 +38,8 @@
         <property name="mandatory" value="true"/>
         <property name="occurrence" value="unbounded"/>
         <property name="visibility" value="true"/>
+
+        <media id="locPatrocinioChurch" type="application/gml+xml" src="media/patrocinioChurch.gml"/>
       </context>
     </body>
 </ncl>

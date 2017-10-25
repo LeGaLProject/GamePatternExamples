@@ -44,6 +44,15 @@
         <property name="visibility" value="true"/>
 
         <media id="locMetropolitanCathedral" type="application/gml+xml" src="media/metropolitanCathedral.gml"/>
+        <media id="mdMetropolitanCathedral" type="text/plain" src="media/treasure.obj">
+          <property name="mtlFile" value="media/treasure.mtl"/>
+          <property name="texture" value="media/treasure.jpg"/>
+        </media>
+
+        <link xconnector="space#onEnteringStart">
+          <bind role="onEntering" component="locMetropolitanCathedral"/>
+          <bind role="start" component="mdMetropolitanCathedral"/>
+        </link>
     	</context>
     </body>
 </ncl>

@@ -8,19 +8,23 @@
   </head>
     <body>
       <!-- game start ports -->
-      <port id="pEntrance1" component="msMetropolitanCathedral" interface="pMetropolitanCathedral"/>
-      <port id="pEntrance2" component="msPeqGrandeChurch" interface="pPeqGrandeChurch"/>
-      <port id="pEntrance3" component="msPatrocinioChurch" interface="pPatrocinioChurch"/>
+      <port id="pEntrance1" component="msPatrocinioChurch" interface="pPatrocinioChurch"/>
 
-      <!-- mission in the metropolitan cathedral -->
-    	<context id="msMetropolitanCathedral">
-        <port id="pMetropolitanCathedral" component="locMetropolitanCathedral"/>
+      <!-- mission in the patrocinio church -->
+      <context id="msPatrocinioChurch">
+        <port id="pPatrocinioChurch" component="locPatrocinioChurch"/>
         <property name="mandatory" value="true"/>
         <property name="occurrence" value="unbounded"/>
         <property name="visibility" value="true"/>
 
-        <media id="locMetropolitanCathedral" type="application/gml+xml" src="media/metropolitanCathedral.gml"/>
-    	</context>
+        <media id="locPatrocinioChurch" type="application/gml+xml" src="media/patrocinioChurch.gml"/>
+        <media id="mdImage" type="image/jpeg" src="media/peqGrandeChurchIndicator.jpg"/>
+
+        <link xconnector="space#onEnteringStart">
+          <bind role="onEntering" component="locPatrocinioChurch"/>
+          <bind role="start" component="mdImage"/>
+        </link>
+      </context>
 
       <!-- mission in the pequeno grande church -->
       <context id="msPeqGrandeChurch">
@@ -32,14 +36,14 @@
         <media id="locPeqGrandeChurch" type="application/gml+xml" src="media/peqGrandeChurch.gml"/>
       </context>
 
-      <!-- mission in the patrocinio church -->
-      <context id="msPatrocinioChurch">
-        <port id="pPatrocinioChurch" component="locPatrocinioChurch"/>
+      <!-- mission in the metropolitan cathedral -->
+    	<context id="msMetropolitanCathedral">
+        <port id="pMetropolitanCathedral" component="locMetropolitanCathedral"/>
         <property name="mandatory" value="true"/>
         <property name="occurrence" value="unbounded"/>
         <property name="visibility" value="true"/>
 
-        <media id="locPatrocinioChurch" type="application/gml+xml" src="media/patrocinioChurch.gml"/>
-      </context>
+        <media id="locMetropolitanCathedral" type="application/gml+xml" src="media/metropolitanCathedral.gml"/>
+    	</context>
     </body>
 </ncl>

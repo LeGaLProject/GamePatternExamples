@@ -34,6 +34,12 @@
       <property name="visibility" value="true"/>
 
       <media id="locPeqGrandeChurch" type="application/gml+xml" src="media/peqGrandeChurch.gml"/>
+      <media id="mdVideo" type="video/3gpp" src="media/metropolitanCathedralIndicator.3gp"/>
+
+      <link xconnector="space#onEnteringStart">
+        <bind role="onEntering" component="locPeqGrandeChurch"/>
+        <bind role="start" component="mdVideo"/>
+      </link>
     </context>
 
     <!-- mission in the metropolitan cathedral -->

@@ -1,1 +1,1 @@
-# LEGaL
+# GamePatternExamples
